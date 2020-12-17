@@ -35,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/workspace/ShingakuDevEnv/ShingakuAxolMypage_21" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lesson-6-refs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,7 +60,7 @@
       <updated>1607589978324</updated>
       <workItem from="1607589979543" duration="5550000" />
       <workItem from="1607651976456" duration="2215000" />
-      <workItem from="1607654252831" duration="2602000" />
+      <workItem from="1607654252831" duration="2902000" />
     </task>
     <servers />
   </component>

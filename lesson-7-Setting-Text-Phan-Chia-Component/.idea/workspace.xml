@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0bd97ee-777f-4f2f-a855-2ddf3c55ae83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/ColorPicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Reset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Result.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SizeSetting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson-4-props/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-4-props/.eslintcache" afterDir="false" />
@@ -9,7 +13,7 @@
       <change beforePath="$PROJECT_DIR$/../lesson-4-props/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-4-props/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson-4-props/src/Components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-4-props/src/Components/Product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson-5-event-handling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-5-event-handling/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson-6-refs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-6-refs/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lesson-7-Setting-Text-Phan-Chia-Component" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lesson-8-form" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,7 +70,10 @@
       <workItem from="1607589979543" duration="5550000" />
       <workItem from="1607651976456" duration="2215000" />
       <workItem from="1607654252831" duration="2602000" />
-      <workItem from="1607676211566" duration="4285000" />
+      <workItem from="1607676211566" duration="4209000" />
+      <workItem from="1607680754986" duration="9579000" />
+      <workItem from="1608027456429" duration="2882000" />
+      <workItem from="1608086233166" duration="782000" />
     </task>
     <servers />
   </component>

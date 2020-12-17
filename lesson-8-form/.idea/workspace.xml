@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bde3a83c-0797-4a3a-b54a-af7d83deae14" name="Default Changelist" comment="">
+    <list default="true" id="26d87497-2726-4ff5-b796-93f1d8de295d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lesson-7-Setting-Text-Phan-Chia-Component/src/Components/ColorPicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-7-Setting-Text-Phan-Chia-Component/src/Components/Reset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-7-Setting-Text-Phan-Chia-Component/src/Components/Result.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson-7-Setting-Text-Phan-Chia-Component/src/Components/SizeSetting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson-4-props/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-4-props/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson-4-props/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-4-props/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson-4-props/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-4-props/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson-4-props/src/Components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-4-props/src/Components/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson-5-event-handling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-5-event-handling/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson-6-refs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-6-refs/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +29,7 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
-  <component name="ProjectId" id="1lSHX8qo9u13DDUUF9gx6MK3rl2" />
+  <component name="ProjectId" id="1lijswKBHdQbXeSP30Ei0MF6llo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,12 +39,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lesson-4-props" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -41,12 +55,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bde3a83c-0797-4a3a-b54a-af7d83deae14" name="Default Changelist" comment="" />
-      <created>1607583608596</created>
+      <changelist id="26d87497-2726-4ff5-b796-93f1d8de295d" name="Default Changelist" comment="" />
+      <created>1608087015138</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1607583608596</updated>
-      <workItem from="1607583609853" duration="4913000" />
+      <updated>1608087015138</updated>
+      <workItem from="1608087018801" duration="4904000" />
+      <workItem from="1608189174464" duration="1605000" />
     </task>
     <servers />
   </component>
@@ -63,5 +78,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

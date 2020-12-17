@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26d87497-2726-4ff5-b796-93f1d8de295d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lesson-7-Setting-Text-Phan-Chia-Component/src/Components/ColorPicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson-7-Setting-Text-Phan-Chia-Component/src/Components/Reset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson-7-Setting-Text-Phan-Chia-Component/src/Components/Result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lesson-7-Setting-Text-Phan-Chia-Component/src/Components/SizeSetting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson-4-props/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-4-props/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson-4-props/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-4-props/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson-4-props/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-4-props/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson-4-props/src/Components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-4-props/src/Components/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson-5-event-handling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-5-event-handling/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lesson-6-refs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-6-refs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608087015138</updated>
       <workItem from="1608087018801" duration="4904000" />
-      <workItem from="1608189174464" duration="1605000" />
+      <workItem from="1608189174464" duration="2488000" />
     </task>
     <servers />
   </component>

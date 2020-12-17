@@ -18,7 +18,7 @@ class App extends Component {
 
   onHandleChange = (event) => {
     var target = event.target;
-    var name = target.name; // txtName txtPassword
+    var name = target.name;
     var value = target.type === 'checkbox' ? target.checked : target.value;
 
 

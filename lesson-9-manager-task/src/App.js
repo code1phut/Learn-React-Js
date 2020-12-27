@@ -74,11 +74,38 @@ class App extends Component {
 
     onSubmit = (data) => {
         var { tasks } = this.state;
-        data.id = this.generateData();
+        data.id = this.generateID();
         tasks.push(data);
         this.setState({tasks: tasks});
 
         localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+
+    onUpdateStatus = (id) => {
+        var { tasks } = this.state;
+        var index = this.findIndex(id);
+        console.log(index);
+        if (index !== -1) {
+            tasks[index].status = !tasks[index].status;
+            this.setState({
+                tasks: tasks
+            });
+
+            localStorage.setItem('tasks', JSON.stringify(tasks));
+        }
+    }
+
+    findIndex = (id) => {
+        var { tasks } = this.state;
+        var result = -1;
+
+        tasks.forEach((task, index) => {
+            if (task.id === id) {
+                result = index;
+            }
+        });
+
+        return result;
     }
 
     render() {
@@ -117,7 +144,10 @@ class App extends Component {
                         </div>
                         <div className="row mt-15">
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <TaskList tasks={tasks}/>
+                                <TaskList 
+                                    tasks={tasks}
+                                    onUpdateStatus={this.onUpdateStatus}
+                                />
                             </div>
                         </div>
                     </div>

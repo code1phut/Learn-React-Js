@@ -18,6 +18,11 @@ class App extends Component {
                 status: -1,
             },
             keyword: '',
+            sort: {
+                by: 'name',
+                value: 1,
+
+            }
         }
     }
     componentWillMount() {

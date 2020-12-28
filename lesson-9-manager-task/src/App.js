@@ -12,11 +12,11 @@ class App extends Component {
         this.state = {
             tasks: [],
             isDisplayForm: false,
+            taskEditings: null,
             filter: {
                 name: '',
                 status: -1,
-            }
-            taskEditings: null,
+            },
         }
     }
     componentWillMount() {
@@ -183,7 +183,7 @@ class App extends Component {
             }
 
             tasks = tasks.filter((task) => {
-                if (filter.status == -1) {
+                if (filter.status === -1) {
                     return task;
                 } else {
                     return task.status === (filter.status === 1 ? true : false);

@@ -12,6 +12,10 @@ class App extends Component {
         this.state = {
             tasks: [],
             isDisplayForm: false,
+            filter: {
+                name: '',
+                status: -1,
+            }
         }
     }
     componentDidMount() {
@@ -124,8 +128,33 @@ class App extends Component {
         this.onCloseForm();
     }
 
+    onFilter = (filterName, filterStatus) => {
+        filterStatus = parseInt(filterStatus);
+        this.setState({
+            filter: {
+                name: filterName,
+                status: filterStatus,
+            }
+        })
+    }
+
     render() {
-        var { tasks, isDisplayForm } = this.state;
+        var { tasks, isDisplayForm, filter} = this.state;
+        if (filter) {
+            if (filter.name) {
+                tasks = tasks.filter((task) => {
+                    return task.name.toLowerCase().indexOf(filter.name.toLowerCase()) !== -1;
+                });
+            }
+
+            tasks = tasks.filter((task) => {
+                if (filter.status == -1) {
+                    return task;
+                } else {
+                    return task.status === (filter.status === 1 ? true : false);
+                }
+            })
+        }
         var elmTaskForm = isDisplayForm ? <TaskForm
             onCloseForm={this.onCloseForm}
             onSubmit={this.onSubmit}
@@ -164,6 +193,7 @@ class App extends Component {
                                     tasks={tasks}
                                     onUpdateStatus={this.onUpdateStatus}
                                     onDelete={this.onDelete}
+                                    onFilter = { this.onFilter }
                                 />
                             </div>
                         </div>

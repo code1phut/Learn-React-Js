@@ -17,6 +17,7 @@ class App extends Component {
                 name: '',
                 status: -1,
             },
+            keyword: '',
         }
     }
     componentWillMount() {
@@ -173,8 +174,14 @@ class App extends Component {
         })
     }
 
+    onSearch = (keyword) => {
+        this.setState({
+            keyword: keyword
+        })
+    }
+
     render() {
-        var { tasks, isDisplayForm, filter, taskEditings} = this.state;
+        var { tasks, isDisplayForm, filter, taskEditings, keyword} = this.state;
         if (filter) {
             if (filter.name) {
                 tasks = tasks.filter((task) => {
@@ -190,6 +197,13 @@ class App extends Component {
                 }
             })
         }
+
+        if (keyword) {
+            tasks = tasks.filter((task) => {
+                return task.name.toLowerCase().indexOf(keyword) !== -1;
+            });
+        }
+
         var elmTaskForm = isDisplayForm ? <TaskForm
             onCloseForm={this.onCloseForm}
             onSubmit={this.onSubmit}
@@ -221,7 +235,7 @@ class App extends Component {
                         {/*    Generate Data*/}
                         {/*</button>*/}
                         <div className="row mt-15">
-                            <TaskControl />
+                            <TaskControl onSearch={this.onSearch}/>
                         </div>
                         <div className="row mt-15">
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">

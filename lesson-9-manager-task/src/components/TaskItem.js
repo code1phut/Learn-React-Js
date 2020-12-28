@@ -19,7 +19,6 @@ class TaskItem extends Component {
                         <span 
                             className={task.status === true ? 'label label-success' : 'label label-danger'}
                             onClick={this.onUpdateStatus}
-                            onClick={this.onDelete}
                         >
                             {task.status === true ? 'Kich Hoat' : 'An'}
                         </span>

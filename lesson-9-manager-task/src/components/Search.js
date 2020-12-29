@@ -25,7 +25,7 @@ class Search extends Component {
     render() {
         var { keyword } = this.state;
         return (
-            <div className="input-group">
+            <div className="input-group mr-5">
                 <input
                     type="text"
                     name="keyword"
@@ -40,7 +40,7 @@ class Search extends Component {
                         type="button"
                         onClick={ this.onSearch }
                     >
-                        <span className="fa fa-search mr-5"/>Tìm
+                        <span className="fa fa-search"/>Tìm
                     </button>
                 </span>
             </div>

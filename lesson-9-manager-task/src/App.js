@@ -18,11 +18,8 @@ class App extends Component {
                 status: -1,
             },
             keyword: '',
-            sort: {
-                by: 'name',
-                value: 1,
-
-            }
+            sortBy: 'name',
+            sortValue: 1,
         }
     }
     componentWillMount() {
@@ -184,9 +181,23 @@ class App extends Component {
             keyword: keyword
         })
     }
+    onSort = (sortBy, sortValue) => {
+        this.setState({
+            sortBy: sortBy,
+            sortValue: sortValue,
+        });
+    }
+
 
     render() {
-        var { tasks, isDisplayForm, filter, taskEditings, keyword} = this.state;
+        var { tasks,
+            isDisplayForm,
+            filter,
+            taskEditings,
+            keyword,
+            sortBy,
+            sortValue
+        } = this.state;
         if (filter) {
             if (filter.name) {
                 tasks = tasks.filter((task) => {
@@ -214,6 +225,21 @@ class App extends Component {
             onSubmit={this.onSubmit}
             task={taskEditings}
         /> : "";
+        if (sortBy === 'name') {
+            tasks.sort((a, b) => {
+                if (a.name > b.name) return sortValue;
+                else if (a.name < b.name) return -sortValue;
+                else return 0;
+            });
+        } else {
+            tasks.sort((a, b) => {
+                if (a.status > b.status) return -sortValue;
+                else if (a.status < b.status) return sortValue;
+                else return 0;
+            });
+        }
+
+
         return (
             <div className="container">
                 <div className="text-center">
@@ -240,7 +266,12 @@ class App extends Component {
                         {/*    Generate Data*/}
                         {/*</button>*/}
                         <div className="row mt-15">
-                            <TaskControl onSearch={this.onSearch}/>
+                            <TaskControl
+                                onSearch={this.onSearch}
+                                onSort={this.onSort}
+                                sortBy={sortBy}
+                                sortValue={sortValue}
+                            />
                         </div>
                         <div className="row mt-15">
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">

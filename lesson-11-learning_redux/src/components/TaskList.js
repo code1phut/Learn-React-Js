@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import TaskItem from "./TaskItem";
 
 class TaskList extends Component {
-
     constructor(props) {
         super(props);
 

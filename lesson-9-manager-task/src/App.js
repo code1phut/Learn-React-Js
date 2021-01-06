@@ -3,6 +3,7 @@ import './App.css';
 import TaskForm from "./components/TaskForm";
 import TaskControl from "./components/TaskControl";
 import TaskList from "./components/TaskList";
+import { findIndex, filter } from "lodash";
 
 class App extends Component {
 
@@ -13,7 +14,7 @@ class App extends Component {
             tasks: [],
             isDisplayForm: false,
             taskEditings: null,
-            filter: {
+            filterDefault: {
                 name: '',
                 status: -1,
             },
@@ -100,7 +101,7 @@ class App extends Component {
             data.id = this.generateID();
             tasks.push(data);
         } else {
-            var index = this.findIndex(data.id);
+            var index = findIndex(data.id);
 
             tasks[index] = data;
         }
@@ -114,8 +115,10 @@ class App extends Component {
 
     onUpdateStatus = (id) => {
         var { tasks } = this.state;
-        var index = this.findIndex(id);
-
+        // var index = this.findIndex(id);
+        var index = findIndex(tasks, (task) => {
+            return task.id === id;
+        })
         if (index !== -1) {
             tasks[index].status = !tasks[index].status;
             this.setState({
@@ -126,22 +129,22 @@ class App extends Component {
         }
     }
 
-    findIndex = (id) => {
-        var { tasks } = this.state;
-        var result = -1;
-
-        tasks.forEach((task, index) => {
-            if (task.id === id) {
-                result = index;
-            }
-        });
-
-        return result;
-    }
+    // findIndex = (id) => {
+    //     var { tasks } = this.state;
+    //     var result = -1;
+    //
+    //     tasks.forEach((task, index) => {
+    //         if (task.id === id) {
+    //             result = index;
+    //         }
+    //     });
+    //
+    //     return result;
+    // }
 
     onDelete = (id) => {
         var { tasks } = this.state;
-        var index = this.findIndex(id);
+        var index = findIndex(id);
         
         if (index !== -1) {
             tasks.splice(index, 1);
@@ -151,13 +154,11 @@ class App extends Component {
 
             localStorage.setItem('tasks', JSON.stringify(tasks));
         }
-
-        this.onShowForm();
     }
 
     onUpdate = (id) => {
         var { tasks } = this.state;
-        var index = this.findIndex(id);
+        var index = findIndex(id);
 
         var taskEditings = tasks[index];
         this.setState({
@@ -169,7 +170,7 @@ class App extends Component {
     onFilter = (filterName, filterStatus) => {
         filterStatus = parseInt(filterStatus);
         this.setState({
-            filter: {
+            filterDefault: {
                 name: filterName,
                 status: filterStatus,
             }
@@ -190,34 +191,36 @@ class App extends Component {
 
 
     render() {
-        var { tasks,
+        var {
+            tasks,
             isDisplayForm,
-            filter,
+            filterDefault,
             taskEditings,
             keyword,
             sortBy,
             sortValue
         } = this.state;
-        if (filter) {
-            if (filter.name) {
+
+        if (filterDefault) {
+            if (filterDefault.name) {
                 tasks = tasks.filter((task) => {
-                    return task.name.toLowerCase().indexOf(filter.name.toLowerCase()) !== -1;
+                    return task.name.toLowerCase().indexOf(filterDefault.name.toLowerCase()) !== -1;
                 });
             }
 
             tasks = tasks.filter((task) => {
-                if (filter.status === -1) {
+                if (filterDefault.status === -1) {
                     return task;
                 } else {
-                    return task.status === (filter.status === 1 ? true : false);
+                    return task.status === (filterDefault.status === 1 ? true : false);
                 }
             })
         }
 
         if (keyword) {
-            tasks = tasks.filter((task) => {
-                return task.name.toLowerCase().indexOf(keyword) !== -1;
-            });
+            tasks = filter(tasks, (task) => {
+                return task.name.toLowerCase().indexOf(keyword.toLowerCase()) !== -1;
+            })
         }
 
         var elmTaskForm = isDisplayForm ? <TaskForm
@@ -225,6 +228,7 @@ class App extends Component {
             onSubmit={this.onSubmit}
             task={taskEditings}
         /> : "";
+
         if (sortBy === 'name') {
             tasks.sort((a, b) => {
                 if (a.name > b.name) return sortValue;
@@ -238,7 +242,6 @@ class App extends Component {
                 else return 0;
             });
         }
-
 
         return (
             <div className="container">

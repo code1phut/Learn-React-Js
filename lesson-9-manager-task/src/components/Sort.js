@@ -2,12 +2,11 @@ import React, {Component} from "react";
 
 class Sort extends Component {
 
-    UNSAFE_componentWillReceiveProps(nextProps) {
-        console.log(nextProps);
-    }
+    // UNSAFE_componentWillReceiveProps(nextProps) {
+    //     console.log(nextProps);
+    // }
 
     onClick = (sortBy, sortValue) => {
-        console.log('sortBy: '+ sortBy, sortValue);
         this.props.onSort(sortBy, sortValue);
     }
     render() {

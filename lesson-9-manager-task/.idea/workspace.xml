@@ -4,9 +4,9 @@
     <list default="true" id="af53b2d2-e339-4aa8-8d91-48c895ad5be3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TaskControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TaskControl.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +108,8 @@
       <workItem from="1609214421365" duration="599000" />
       <workItem from="1609821458814" duration="4420000" />
       <workItem from="1609832693928" duration="598000" />
-      <workItem from="1609834080540" duration="1687000" />
+      <workItem from="1609834080540" duration="8017000" />
+      <workItem from="1609917905966" duration="599000" />
     </task>
     <servers />
   </component>

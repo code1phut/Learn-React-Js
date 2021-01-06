@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af53b2d2-e339-4aa8-8d91-48c895ad5be3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/abcj.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sort.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +69,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/workspace/ShingakuDevEnv/ShingakuAxol_21" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -106,6 +104,12 @@
       <workItem from="1608718083193" duration="10906000" />
       <workItem from="1608861969556" duration="2365000" />
       <workItem from="1608882615146" duration="2327000" />
+      <workItem from="1609210146364" duration="1370000" />
+      <workItem from="1609214421365" duration="599000" />
+      <workItem from="1609821458814" duration="4420000" />
+      <workItem from="1609832693928" duration="598000" />
+      <workItem from="1609834080540" duration="8017000" />
+      <workItem from="1609917905966" duration="599000" />
     </task>
     <servers />
   </component>

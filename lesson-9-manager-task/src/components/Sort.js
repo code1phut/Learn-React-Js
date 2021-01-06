@@ -2,19 +2,12 @@ import React, {Component} from "react";
 
 class Sort extends Component {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            sort: {
-                by: 'name',
-                value: 1,
-            }
-        }
-    }
+    // UNSAFE_componentWillReceiveProps(nextProps) {
+    //     console.log(nextProps);
+    // }
 
     onClick = (sortBy, sortValue) => {
-        this.setState({ sort : sortBy, value: sortValue });
+        this.props.onSort(sortBy, sortValue);
     }
     render() {
         return (
@@ -29,6 +22,8 @@ class Sort extends Component {
                     >
                         <a
                             role="button"
+                            className={
+                                (this.props.sortBy === 'name'  && this.props.sortValue === 1) ? 'sort_selected' : '' }
                         >
                             <span className="fa fa-sort-alpha-asc pr-5">
                                 Tên A-Z
@@ -38,7 +33,11 @@ class Sort extends Component {
                     <li
                         onClick={ () => this.onClick('name', -1)}
                     >
-                        <a role="button">
+                        <a
+                            role="button"
+                            className={
+                                (this.props.sortBy === 'name'  && this.props.sortValue === -1) ? 'sort_selected' : '' }
+                        >
                             <span className="fa fa-sort-alpha-desc pr-5">
                                 Tên Z-A
                             </span>
@@ -48,12 +47,22 @@ class Sort extends Component {
                     <li
                         onClick={ () => this.onClick('status', 1)}
                     >
-                        <a role="button">Trạng Thái Kích Hoạt</a>
+                        <a
+                            role="button"
+                            className={
+                                (this.props.sortBy === 'status'  && this.props.sortValue === 1) ? 'sort_selected' : '' }
+                        >
+                        Trạng Thái Kích Hoạt</a>
                     </li>
                     <li
                         onClick={ () => this.onClick('status', -1)}
                     >
-                        <a role="button">Trạng Thái Ẩn</a>
+                        <a
+                            role="button"
+                            className={
+                                (this.props.sortBy === 'status'  && this.props.sortValue === -1) ? 'sort_selected' : '' }
+                        >
+                            Trạng Thái Ẩn</a>
                     </li>
                 </ul>
             </div>

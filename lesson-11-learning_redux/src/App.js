@@ -145,6 +145,7 @@ class App extends Component {
     onDelete = (id) => {
         var { tasks } = this.state;
         var index = findIndex(id);
+        console.log(index);
         
         if (index !== -1) {
             tasks.splice(index, 1);
